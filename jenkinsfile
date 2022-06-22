@@ -1,8 +1,20 @@
-pipeline{
-    agent any
-    stages{
-        stage('SCM checkout'){
-            echo "hello"
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                // 
+            }
+        }
+        stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
+            }
         }
     }
 }
