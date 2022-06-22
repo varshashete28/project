@@ -11,6 +11,14 @@
     </properties>
   <name>WebAppCal Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <build>
+    <resources>
+        <resource>
+            <directory>src/main/java/mypackage/</directory>
+            <filtering>true</filtering>
+        </resource>
+    </resources>
+</build>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
