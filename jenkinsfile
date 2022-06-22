@@ -1,9 +1,13 @@
 pipeline {
     agent any 
     stages {
-        stage('Build') { 
+        stage('Docker image proj1') { 
             steps {
-                echo "build"
+                echo "create docker image contains maven war. war deployed on tomcat server"
+                sh """
+                    docker build -t project1 .
+                    docker run -dt --name WebAppCal-1.3.6 -p 80:8080 project1:latest
+                """
             }
         }
         stage('Test') { 
