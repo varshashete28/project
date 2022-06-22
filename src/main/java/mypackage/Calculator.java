@@ -3,6 +3,7 @@ package mypackage;
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
+System.out.printf("'%s' %n", "javatpoint");  
 
 public class Calculator extends HttpServlet
 {
@@ -26,6 +27,7 @@ public class Calculator extends HttpServlet
     {
         try
         {
+	
         response.setContentType("text/html");
         PrintWriter out= response.getWriter();
         int a1= Integer.parseInt(request.getParameter("n1"));
